@@ -78,6 +78,16 @@ function fizzBuzz(max) {
     /* Takes a number, max and returns an array that contains every number from
     0 to max (not inclusive) that is divisible by either 3 or 5, **but not both**. */
     // Your code here
+    const result = [];
+    for (let i = 0; i < max; i++) {
+        const divisibleBy3 = i % 3 === 0;
+        const divisibleBy5 = i % 5 === 0;
+
+        if ((divisibleBy3 || divisibleBy5) && !(divisibleBy3 && divisibleBy5)) {
+            result.push(i);
+        }
+    }
+    return result;
 };
 
 function hello(name) {
