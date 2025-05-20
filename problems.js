@@ -9,6 +9,10 @@ function divideByThree(num) {
 function averageOfTwo(num1, num2) {
     /* Returns the average of two numbers, num1 and num2. */
     // Your code here
+    let value1 = num1;
+    let value2 = num2;
+    let result = (num1 + num2) / 2;
+    return result;
 };
 
 function averageOfFour(num1, num2, num3, num4) {
